@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: agentos-landing
+    runtime: static
+    buildCommand: echo "Static site"
+    staticPublishPath: .
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=3600
