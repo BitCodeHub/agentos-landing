@@ -16,33 +16,14 @@
             min-height: 100vh;
         }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-        
-        /* Hero */
         .hero {
             padding: 80px 0 60px;
             text-align: center;
             color: white;
         }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 40px;
-            letter-spacing: -0.5px;
-        }
-        .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 700;
-            margin-bottom: 20px;
-            letter-spacing: -1px;
-        }
-        .hero p {
-            font-size: 1.25rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto 40px;
-        }
-        
-        /* Form Card */
+        .logo { font-size: 1.5rem; font-weight: 700; margin-bottom: 40px; letter-spacing: -0.5px; }
+        .hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; margin-bottom: 20px; letter-spacing: -1px; }
+        .hero p { font-size: 1.25rem; opacity: 0.9; max-width: 600px; margin: 0 auto 40px; }
         .form-card {
             background: white;
             border-radius: 16px;
@@ -51,24 +32,10 @@
             margin: 0 auto;
             box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
         }
-        .form-card h2 {
-            font-size: 1.5rem;
-            margin-bottom: 8px;
-            color: #1a1a2e;
-        }
-        .form-card .subtitle {
-            color: #666;
-            margin-bottom: 24px;
-        }
-        .form-group {
-            margin-bottom: 16px;
-        }
-        .form-group label {
-            display: block;
-            font-weight: 500;
-            margin-bottom: 6px;
-            font-size: 0.9rem;
-        }
+        .form-card h2 { font-size: 1.5rem; margin-bottom: 8px; color: #1a1a2e; }
+        .form-card .subtitle { color: #666; margin-bottom: 24px; }
+        .form-group { margin-bottom: 16px; }
+        .form-group label { display: block; font-weight: 500; margin-bottom: 6px; font-size: 0.9rem; }
         .form-group input, .form-group select {
             width: 100%;
             padding: 12px 16px;
@@ -77,10 +44,7 @@
             font-size: 1rem;
             transition: border-color 0.2s;
         }
-        .form-group input:focus, .form-group select:focus {
-            outline: none;
-            border-color: #667eea;
-        }
+        .form-group input:focus, .form-group select:focus { outline: none; border-color: #667eea; }
         .btn-primary {
             width: 100%;
             padding: 14px 24px;
@@ -93,120 +57,41 @@
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
         }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
-        }
-        .privacy {
-            text-align: center;
-            margin-top: 16px;
-            font-size: 0.85rem;
-            color: #888;
-        }
-        
-        /* Features */
-        .features {
-            background: white;
-            padding: 80px 0;
-        }
-        .features h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 50px;
-        }
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        .feature {
-            padding: 30px;
-            border-radius: 12px;
-            background: #f9fafb;
-        }
-        .feature-icon {
-            font-size: 2rem;
-            margin-bottom: 16px;
-        }
-        .feature h3 {
-            font-size: 1.25rem;
-            margin-bottom: 10px;
-        }
-        .feature p {
-            color: #666;
-        }
-        
-        /* Problem Section */
-        .problem {
-            padding: 80px 0;
-            background: #1a1a2e;
-            color: white;
-        }
-        .problem h2 {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        .problem-list {
-            max-width: 600px;
-            margin: 0 auto;
-            list-style: none;
-        }
-        .problem-list li {
-            padding: 12px 0;
-            padding-left: 30px;
-            position: relative;
-            opacity: 0.9;
-        }
-        .problem-list li:before {
-            content: "✗";
-            position: absolute;
-            left: 0;
-            color: #ef4444;
-        }
-        .problem .highlight {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 1.25rem;
-            color: #fbbf24;
-            font-weight: 600;
-        }
-        
-        /* Footer */
-        footer {
-            background: #1a1a2e;
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-        }
-        footer p {
-            opacity: 0.7;
-        }
-        
-        /* Success State */
-        .success-message {
-            display: none;
-            text-align: center;
-            padding: 40px;
-        }
-        .success-message h2 {
-            color: #10b981;
-            margin-bottom: 10px;
-        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3); }
+        .privacy { text-align: center; margin-top: 16px; font-size: 0.85rem; color: #888; }
+        .features { background: white; padding: 80px 0; }
+        .features h2 { text-align: center; font-size: 2rem; margin-bottom: 50px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .feature { padding: 30px; border-radius: 12px; background: #f9fafb; }
+        .feature-icon { font-size: 2rem; margin-bottom: 16px; }
+        .feature h3 { font-size: 1.25rem; margin-bottom: 10px; }
+        .feature p { color: #666; }
+        .problem { padding: 80px 0; background: #1a1a2e; color: white; }
+        .problem h2 { font-size: 2rem; margin-bottom: 30px; text-align: center; }
+        .problem-list { max-width: 600px; margin: 0 auto; list-style: none; }
+        .problem-list li { padding: 12px 0; padding-left: 30px; position: relative; opacity: 0.9; }
+        .problem-list li:before { content: "✗"; position: absolute; left: 0; color: #ef4444; }
+        .problem .highlight { text-align: center; margin-top: 30px; font-size: 1.25rem; color: #fbbf24; font-weight: 600; }
+        footer { background: #1a1a2e; color: white; padding: 40px 0; text-align: center; }
+        footer p { opacity: 0.7; }
+        .success-message { display: none; text-align: center; padding: 40px; }
+        .success-message h2 { color: #10b981; margin-bottom: 10px; }
+        .counter { background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 20px; display: inline-block; margin-bottom: 20px; font-size: 0.9rem; }
     </style>
 </head>
 <body>
     <section class="hero">
         <div class="container">
             <div class="logo">AgentOS</div>
+            <div class="counter">🚀 Early Access Opening Soon</div>
             <h1>Close More Deals.<br>Work Less.</h1>
             <p>The operating system for real estate agents. AI handles your research, outreach, and contracts — so you can focus on closing.</p>
             
             <div class="form-card">
                 <div id="signup-form">
                     <h2>Get Early Access</h2>
-                    <p class="subtitle">Join 100+ agents on the waitlist</p>
-                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="waitlist-form">
+                    <p class="subtitle">Be first to try AgentOS when we launch</p>
+                    <form id="waitlist-form">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required placeholder="Your name">
@@ -220,23 +105,23 @@
                             <input type="text" id="brokerage" name="brokerage" placeholder="Your brokerage name">
                         </div>
                         <div class="form-group">
-                            <label for="pain">Biggest time-waster?</label>
-                            <select id="pain" name="pain_point">
+                            <label for="pain">Biggest daily time-waster?</label>
+                            <select id="pain" name="pain_point" required>
                                 <option value="">Select one...</option>
                                 <option value="research">Property Research</option>
-                                <option value="outreach">Lead Outreach</option>
+                                <option value="outreach">Lead Outreach & Follow-ups</option>
                                 <option value="contracts">Contract Management</option>
-                                <option value="scheduling">Scheduling</option>
+                                <option value="scheduling">Scheduling & Calendar</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn-primary">Join the Waitlist</button>
+                        <button type="submit" class="btn-primary">Join the Waitlist →</button>
                     </form>
-                    <p class="privacy">No spam. Just launch updates and early pricing.</p>
+                    <p class="privacy">🔒 No spam. Just launch updates and early pricing.</p>
                 </div>
                 <div class="success-message" id="success">
                     <h2>You're on the list! 🎉</h2>
-                    <p>We'll email you when early access opens.</p>
+                    <p>We'll email you when early access opens.<br>Keep an eye on your inbox.</p>
                 </div>
             </div>
         </div>
@@ -247,10 +132,10 @@
             <h2>You didn't become an agent to do data entry.</h2>
             <ul class="problem-list">
                 <li>Manual property research across 10 different sites</li>
-                <li>Skip tracing and lead hunting</li>
-                <li>Contract prep and follow-up emails</li>
+                <li>Skip tracing and lead hunting for hours</li>
+                <li>Contract prep and endless follow-up emails</li>
                 <li>Scheduling showings while driving between listings</li>
-                <li>Remembering who to call back and when</li>
+                <li>Trying to remember who to call back and when</li>
             </ul>
             <p class="highlight">You're spending 60% of your time on admin, not selling.</p>
         </div>
@@ -301,21 +186,51 @@
     </footer>
     
     <script>
-        // Simple form submission handling
-        document.getElementById('waitlist-form').addEventListener('submit', function(e) {
-            // For now, show success message (replace with actual form handler)
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwPlaceholder/exec';
+        
+        document.getElementById('waitlist-form').addEventListener('submit', async function(e) {
             e.preventDefault();
-            document.getElementById('signup-form').style.display = 'none';
-            document.getElementById('success').style.display = 'block';
             
-            // Actually submit the form data
-            const formData = new FormData(this);
-            fetch(this.action, {
-                method: 'POST',
-                body: formData,
-                headers: { 'Accept': 'application/json' }
-            });
+            const btn = this.querySelector('button');
+            const originalText = btn.textContent;
+            btn.textContent = 'Joining...';
+            btn.disabled = true;
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                brokerage: document.getElementById('brokerage').value,
+                pain_point: document.getElementById('pain').value,
+                timestamp: new Date().toISOString(),
+                source: 'agentos-landing'
+            };
+            
+            try {
+                // Store in localStorage as backup
+                const existing = JSON.parse(localStorage.getItem('agentos_waitlist') || '[]');
+                existing.push(formData);
+                localStorage.setItem('agentos_waitlist', JSON.stringify(existing));
+                
+                // Show success
+                document.getElementById('signup-form').style.display = 'none';
+                document.getElementById('success').style.display = 'block';
+                
+                // Try to send to backend (will fail silently if not configured)
+                fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: JSON.stringify(formData)
+                }).catch(() => {});
+                
+            } catch (err) {
+                btn.textContent = originalText;
+                btn.disabled = false;
+                alert('Something went wrong. Please try again.');
+            }
         });
+        
+        // Log page views
+        console.log('AgentOS Landing - Page loaded:', new Date().toISOString());
     </script>
 </body>
 </html>
